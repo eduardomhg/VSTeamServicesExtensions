@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckCodeCoverage", "CheckCodeCoverage", "{FDAD4AA6-112C-4347-8CDA-8D5D0A9A856B}"
+	ProjectSection(SolutionItems) = preProject
+		CheckCodeCoverage\CheckCodeCoverage.ps1 = CheckCodeCoverage\CheckCodeCoverage.ps1
+		CheckCodeCoverage\extension-icon.png = CheckCodeCoverage\extension-icon.png
+		CheckCodeCoverage\task.json = CheckCodeCoverage\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A6D90B8-A55C-42A0-8C98-B32E1E53B1B1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		vss-extension.json = vss-extension.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
