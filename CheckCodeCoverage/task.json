@@ -1,11 +1,11 @@
 {
-  "id": "dc66d2f0-a7ba-11e5-ae62-3deab86d85e3",
-  "name": "zip",
-  "friendlyName": "Zip A Folder",
-  "description": "Zip Files and Folder",
-  "author": "ms-devlabs",
-  "helpMarkDown": "[More Information](https://github.com/openalm/Extension-UtilitiesPack)",
-  "category": "Utility",
+  "id": "79984C9F-C03C-45E4-9702-F18ED90751DD",
+  "name": "CheckCodeCoverage",
+  "friendlyName": "Check test code coverage",
+  "description": "Check test code coverage and fail the build if it is below a provided threshold",
+  "author": "eduardomhg",
+  "helpMarkDown": "[More Information](https://github.com/eduardomhg/VSTeamServicesExtensions)",
+  "category": "Test",
   "visibility": [
     "Build",
     "Release"
@@ -13,11 +13,11 @@
   "demands": [],
   "version": {
     "Major": "0",
-    "Minor": "2",
-    "Patch": "0"
+    "Minor": "0",
+    "Patch": "1"
   },
   "minimumAgentVersion": "1.83.0",
-  "instanceNameFormat": "Zip",
+  "instanceNameFormat": "Check Code Coverage",
   "groups": [
         {
             "name":"advanced",
@@ -27,34 +27,17 @@
     ],
   "inputs": [
     {
-      "name": "pathToZipFolder",
-      "type": "filePath",
-      "label": "Path to folder",
-      "defaultValue": "",
+      "name": "$desiredCodeCoveragePercent",
+      "type": "number",
+      "label": "Code Coverage Percent Threshold",
+      "defaultValue": "95",
       "required": true,
-      "helpMarkDown": "Path to the folder whose content has to be zipped."
-    },
-    {
-      "name": "pathToZipFile",
-      "type": "filePath",
-      "label": "Path to the zip file",
-      "defaultValue": "",
-      "required": true,
-      "helpMarkDown": "Path to the zip file which will be generated"
-    },
-    { 
-        "name": "overwrite", 
-        "type": "boolean", 
-        "label": "Overwrite zip file", 
-        "defaultValue": "false", 
-        "required":false,
-        "helpMarkDown": "Overwrites the existing zip file",
-        "groupName":"advanced"
+      "helpMarkDown": "Code Coverage Percent Threshold."
     }
   ],
   "execution": {
     "PowerShell": {
-      "target": "$(currentDirectory)\\zip.ps1",
+      "target": "$(currentDirectory)\\CheckCodeCoverage.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(currentDirectory)"
     }
