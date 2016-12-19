@@ -16,6 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		vss-extension.json = vss-extension.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackageVssExtension", "PackageVssExtension", "{E28511DC-7212-4E69-8EDA-7000F8E71855}"
+	ProjectSection(SolutionItems) = preProject
+		PackageVssExtension\extension-icon.png = PackageVssExtension\extension-icon.png
+		PackageVssExtension\PackageVssExtension.ps1 = PackageVssExtension\PackageVssExtension.ps1
+		PackageVssExtension\task.json = PackageVssExtension\task.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,45 @@
+{
+  "id": "389BB08E-7C13-4483-9E4F-43C9282ED9F8",
+  "name": "PackageVssExtension",
+  "friendlyName": "Package a VSS Extension",
+  "description": "Package a VSS Extension into a VSIX file",
+  "author": "eduardomhg",
+  "helpMarkDown": "[More Information](https://github.com/eduardomhg/VSTeamServicesExtensions)",
+  "category": "Test",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "version": {
+    "Major": "0",
+    "Minor": "0",
+    "Patch": "1"
+  },
+  "minimumAgentVersion": "1.83.0",
+  "instanceNameFormat": "Package a VSS Extension",
+  "groups": [
+        {
+            "name":"advanced",
+            "displayName":"Advanced",
+            "isExpanded":false
+        }
+    ],
+  "inputs": [
+    {
+      "name": "extensionManifestFilePath",
+      "type": "filePath",
+      "label": "Extension Manifest File Path",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Extension Manifest File Path."
+    }
+  ],
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\PackageVssExtension.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

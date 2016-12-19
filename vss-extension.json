@@ -36,14 +36,25 @@
         }
     ],
     "contributions": [
+      {
+        "id": "task-CheckCodeCoverage",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "CheckCodeCoverage"
+        }
+      },
+
         {
-            "id": "task-CheckCodeCoverage",
+            "id": "task-PackageVssExtension",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "CheckCodeCoverage"
+                "name": "PackageVssExtension"
             }
         }
     ]
